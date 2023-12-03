@@ -1,0 +1,16 @@
+<div class="container">
+<form [formGroup]="detailsForm">
+    <label class="form-label">ID: <input formControlName="id" type="number" class="form-control"></label><br />
+    <button type="button" (click)="fetchDetailsById()" class="btn btn-primary">Get Details</button>
+    <button type="button" (click)="fetchAllDetails()" class="margin-left btn btn-primary">Get All Details</button>
+  </form>
+  
+  <div *ngFor="let detail of details">
+    <h4>{{ detail.name }}</h4>
+    <p>Email: {{ detail.email }}</p>
+    <p>Username: {{ detail.username }}</p>
+    <p>Phone: {{ detail.phone }}</p>
+    <hr>
+  </div>
+</div> 
+  
