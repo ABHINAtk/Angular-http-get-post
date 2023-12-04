@@ -1,6 +1,3 @@
-
-// src/app/create-record/create-record.component.ts
-
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DataService } from '../data.service';
@@ -19,8 +16,8 @@ export class CreateRecordComponent {
     this.recordForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      username: ['', Validators.required], // Add the 'username' field
-      phone: ['', Validators.required],    // Add the 'phone' field
+      username: ['', Validators.required], 
+      phone: ['', Validators.required],    
     });
   }
 
