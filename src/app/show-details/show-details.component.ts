@@ -1,5 +1,3 @@
-// src/app/show-details/show-details.component.ts
-
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { DataService } from '../data.service';
